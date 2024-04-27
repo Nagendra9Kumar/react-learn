@@ -2,7 +2,7 @@ import image from './image.png';
 const Nav = () => {
   return (
     <>
-      <nav className="flex w-screen justify-between pr-12 border-b-[1px]">
+      <nav className="flex bg-black w-screen justify-between pr-12 border-b-[1px]">
 
         <ul className="flex w-2/5 justify-evenly py-3 px-2 text-white">
           <li><a href="http://127.0.0.1:3000" className='no-underline'>Home</a></li>
@@ -15,11 +15,24 @@ const Nav = () => {
     </>
   );
 }
+const Sec = (props) => {
+  return (
+    <>
+      <section className='flex h-screen bg-black justify-center items-center snap-start'>
+        <h1 className='text-white'>{props.uname}</h1>
+      </section>
+    </>
+  );
+}
 const App = () => {
   return (
-    <div className="App bg-black h-screen">
+    <>
       <Nav />
-    </div>
+      <div className="App bg-black h-[92.2vh] snap-mandatory snap-y overflow-y-scroll overscroll-x-none">
+        <Sec uname='Im Nagendra' />
+        <Sec uname='Studing 2nd Cad' />
+        <Sec uname='20 yr old' />
+      </div></>
   )
 }
 export default App;
