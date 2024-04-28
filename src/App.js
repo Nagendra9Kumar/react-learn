@@ -19,7 +19,7 @@ const Sec = (props) => {
   return (
     <>
       <section className='flex h-screen bg-black justify-center items-center snap-start'>
-        <h1 className='text-white'>{props.uname}</h1>
+        <h1 className='text-white animate-bounce'>{props.uname}</h1>
       </section>
     </>
   );
@@ -28,7 +28,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <div className="App bg-black h-[92.2vh] snap-mandatory snap-y overflow-y-scroll overscroll-x-none">
+      <div className="App bg-black h-[92.2] snap-mandatory snap-y overflow-y-scroll overscroll-x-none">
         <Sec uname='Im Nagendra' />
         <Sec uname='Studing 2nd Cad' />
         <Sec uname='20 yr old' />
