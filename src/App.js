@@ -19,7 +19,7 @@ const Sec = (props) => {
   return (
     <>
       <section className='flex h-screen bg-black justify-center items-center snap-start'>
-        <h1 className='text-white animate-bounce'>{props.uname}</h1>
+        <h1 className='text-white animate-ping'>{props.uname}</h1>
       </section>
     </>
   );
