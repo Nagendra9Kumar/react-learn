@@ -20,7 +20,7 @@ const Sec = (props) => {
   return (
     <>
       <section className='flex h-[91vh] bg-black justify-center items-center snap-start'>
-        <h1 className='text-white text-6xl animate-ping hover:text-green-500'>{props.uname}</h1>
+        <h1 className='text-white text-6xl max-md:text-3xl max-sm:text-xl animate-ping hover:text-green-500'>{props.uname}</h1>
       </section>
     </>
   );
